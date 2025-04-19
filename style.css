@@ -1,0 +1,114 @@
+/* Temel Ayarlar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #ffe0ec, #ffc3d6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5a2a41;
+  text-align: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Kalp süsleri */
+body::before {
+  content: '💕';
+  font-size: 5rem;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  animation: float 6s infinite ease-in-out;
+  opacity: 0.2;
+}
+
+body::after {
+  content: '💖';
+  font-size: 5rem;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  animation: float 8s infinite ease-in-out;
+  opacity: 0.2;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* Konteyner */
+.container {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(255, 105, 135, 0.3);
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Yazılar */
+p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #5a2a41;
+}
+
+/* Input */
+input[type="text"] {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: 2px solid #ffb6c1;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 400px;
+  background-color: #fff5f8;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #ff6fa0;
+  outline: none;
+}
+
+/* Butonlar */
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff6fa0, #ff85b0);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 105, 135, 0.4);
+}
+
+/* Gizleme */
+.hidden {
+  display: none;
+}
+
+/* Final bölüm */
+#final-box p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #82314c;
+}
+
+a button {
+  margin-top: 20px;
+  background: linear-gradient(to right, #ff6fa0, #ff85b0);
+}

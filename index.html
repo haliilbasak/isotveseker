@@ -1,1 +1,37 @@
-<h1>Yükleniyor...</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bizim Hikayemiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div id="question-box">
+      <p id="question-text">Hazırsan başlıyoruz...</p>
+      <input type="text" id="answer-input" placeholder="Cevabın..." />
+      <button id="next-btn" onclick="nextQuestion()">Devam Et</button>
+    </div>
+
+    <div id="memory-box" class="hidden">
+      <p id="memory-text">Birlikte geçirdiğimiz zamanlar...</p>
+      <button id="next-memory-btn" onclick="nextMemory()">Devam Et</button>
+    </div>
+
+    <div id="final-box" class="hidden">
+      <p>
+        Bir Pazar sabahı kahvaltıyı Phaselis’de yapmak, kitap okumak, yüzmek,<br>
+        sonra Likya yolunda yürümek ister misin?<br><br>
+        <strong>Cevabını kapıyı açarak ver…</strong>
+      </p>
+      <a href="https://www.youtube.com/watch?v=3AK_Gx146ZY" target="_blank">
+        <button>Şarkıyı Dinlemek İçin Tıklayın</button>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
